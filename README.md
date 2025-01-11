@@ -84,9 +84,4 @@ To run the project locally:
 - Add support for user-defined input arrays.
 - Improve visualization animations.
 
-## License
-This project is licensed under the MIT License.
 
----
-
-Feel free to customize this according to your preferences!
