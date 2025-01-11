@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algorithm Visualization</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+      <h1 class="logo">Algorithm Visualizer</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+      </nav>
+    </div>
+
+  </div>
+  <div class="visualization-content">
+    <h2 id="algorithm-title" class="algorithm-title">Algorithm Name</h2>
+    <div id="bars-container" class="bars-container"></div>
+    <div class="controls">
+      <button id="start-btn" class="control-btn">▶ Start</button>
+      <button id="reset-btn" class="control-btn">⟳ Reset</button>
+      <div class="speed-control">
+        <label for="speed-slider">Speed:</label>
+        <input type="range" id="speed-slider" min="10" max="1000" step="10" value="500">
+      </div>
+    </div>
+    <div class="details">
+      <h3>Algorithm Details</h3>
+      <p><b>Time Complexity:</b> <span id="time-complexity">-</span></p>
+      <p><b>Space Complexity:</b> <span id="space-complexity">-</span></p>
+    </div>
+    <div class="pseudocode">
+      <h3>Pseudocode</h3>
+      <pre id="pseudocode-text"></pre>
+    </div>
+  </div>
+  <script src="visualization.js"></script>
+</body>
+</html>
+
+
+

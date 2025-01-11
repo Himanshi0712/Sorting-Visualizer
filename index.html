@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algorithm Visualizer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <h1 class="logo">Algorithm Visualizer</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+    </nav>
+  </div>
+
+  <div class="content">
+    <h2>Explore Algorithms</h2>
+    <p>Discover and visualize various algorithms through interactive demonstrations</p>
+
+    <div class="filters">
+      <input type="text" id="search" placeholder="Search algorithms..." />
+      <select id="category">
+        <option value="all">All Categories</option>
+        <option value="sorting">Sorting</option>
+        <option value="searching">Searching</option>
+      </select>
+    </div>
+
+    <div class="cards-container" id="cards-container">
+      <!-- Cards for algorithms -->
+      <div class="card" data-category="sorting">
+        <h3>Bubble Sort</h3>
+        <span class="tag sorting">Sorting</span>
+        <span class="tag difficulty">Easy</span>
+        <p>A simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if needed.</p>
+        <a href="visualization.html?algorithm=BubbleSort" class="visualize-btn">Visualize &rarr;</a>
+      </div>
+      <div class="card" data-category="sorting">
+        <h3>Selection Sort</h3>
+        <span class="tag sorting">Sorting</span>
+        <span class="tag difficulty">Easy</span>
+        <p>A sorting algorithm that divides the input into a sorted and unsorted region, repeatedly selecting the smallest element.</p>
+        <a href="visualization.html?algorithm=SelectionSort" class="visualize-btn">Visualize &rarr;</a>
+      </div>
+      <div class="card" data-category="searching">
+        <h3>Binary Search</h3>
+        <span class="tag searching">Searching</span>
+        <span class="tag difficulty">Medium</span>
+        <p>An efficient algorithm for finding an item in a sorted list by repeatedly dividing the search interval in half.</p>
+        <a href="visualization.html?algorithm=BinarySearch" class="visualize-btn">Visualize &rarr;</a>
+      </div>
+      <div class="card" data-category="searching">
+        <h3>Insertion Sort</h3>
+        <span class="tag searching">Searching</span>
+        <span class="tag difficulty">Easy</span>
+        <p>A sorting algorithm that builds the sorted array one element at a time by placing each element in its correct position.</p>
+        <a href="visualization.html?algorithm=InsertionSort" class="visualize-btn">Visualize &rarr;</a>
+      </div>
+      <div class="card" data-category="searching">
+        <h3>Linear Search</h3>
+        <span class="tag searching">Searching</span>
+        <span class="tag difficulty">Easy</span>
+        <p>A straightforward algorithm that checks every element of the list to find the target value.</p>
+        <a href="visualization.html?algorithm=LinearSearch" class="visualize-btn">Visualize &rarr;</a>
+      </div>
+      <div class="card" data-category="searching">
+        <h3>Quick Sort</h3>
+        <span class="tag searching">Searching</span>
+        <span class="tag difficulty">Medium</span>
+        <p>A divide-and-conquer sorting algorithm that partitions the array around a pivot element.</p>
+        <a href="visualization.html?algorithm=QuickSort" class="visualize-btn">Visualize  &rarr;</a>
+      </div>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
+
